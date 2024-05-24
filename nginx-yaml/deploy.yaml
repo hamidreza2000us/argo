@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    deployment.kubernetes.io/revision: "2"
+    deployment.kubernetes.io/revision: "1"
     image.openshift.io/triggers: '[{"from":{"kind":"ImageStreamTag","name":"cicd:latest"},"fieldPath":"spec.template.spec.containers[?(@.name==\"cicd\")].image"}]'
     openshift.io/generated-by: OpenShiftNewApp
   generation: 2
