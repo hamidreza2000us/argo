@@ -4,7 +4,6 @@ metadata:
   annotations:
     image.openshift.io/triggers: '[{"from":{"kind":"ImageStreamTag","name":"cicd:latest"},"fieldPath":"spec.template.spec.containers[?(@.name==\"cicd\")].image"}]'
     openshift.io/generated-by: OpenShiftNewApp
-  generation: 2
   labels:
     app: cicd
     app.kubernetes.io/component: cicd
